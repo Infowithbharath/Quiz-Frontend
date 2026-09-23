@@ -1,4 +1,5 @@
-const API_BASE = (import.meta.env.VITE_API_URL || '').replace(/\/+$/, '') + '/api';
+const BACKEND_URL = 'https://quiz-backend-umber.vercel.app';
+const API_BASE = (import.meta.env.VITE_API_URL || BACKEND_URL).replace(/\/+$/, '') + '/api';
 
 export const tokenStorage = {
   get: () => sessionStorage.getItem('ctf_contestant_token'),
